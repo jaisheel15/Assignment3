@@ -17,8 +17,6 @@ type FileSummary = {
   preview: string
 }
 
-const API_URL = 'http://localhost:8000'
-
 const chatInput = ref('')
 const selectedFile = ref<File | null>(null)
 const fileSummary = ref<FileSummary | null>(null)
@@ -76,7 +74,7 @@ async function handleFileChange(event: Event) {
     const formData = new FormData()
     formData.append('file', file)
 
-    const response = await fetch(`${API_URL}/upload`, {
+    const response = await fetch('/api/upload', {
       method: 'POST',
       body: formData
     })
@@ -134,7 +132,7 @@ async function sendMessage() {
   await scrollToLatest()
 
   try {
-    const response = await fetch(`${API_URL}/chat`, {
+    const response = await fetch('/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

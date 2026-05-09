@@ -1816,6 +1816,7 @@ dependencies = [
     { name = "python-multipart" },
     { name = "sentence-transformers" },
     { name = "tqdm" },
+    { name = "uvicorn" },
 ]
 
 [package.metadata]
@@ -1833,6 +1834,7 @@ requires-dist = [
     { name = "python-multipart", specifier = ">=0.0.27" },
     { name = "sentence-transformers", specifier = ">=5.4.1" },
     { name = "tqdm", specifier = ">=4.67.3" },
+    { name = "uvicorn", specifier = ">=0.46.0" },
 ]
 
 [[package]]

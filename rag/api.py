@@ -33,7 +33,7 @@ vector_store = None
 retriever = None
 current_file_path = None
 
-api_key = os.getenv("groq_api_key")
+api_key = os.getenv("GROQ_API_KEY") or os.getenv("groq_api_key")
 
 # Pydantic models
 class QueryRequest(BaseModel):
