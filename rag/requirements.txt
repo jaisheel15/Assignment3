@@ -1,6 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
 langchain
 langchain_community
 langchain_core
+langchain-text-splitters
 sentence_transformers
 langchain_huggingface
 langchain_chroma
