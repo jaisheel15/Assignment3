@@ -1,0 +1,12 @@
+langchain
+langchain_community
+langchain_core
+sentence_transformers
+langchain_huggingface
+langchain_chroma
+chroma
+pymupdf
+langchain_groq
+python-dotenv
+
+tqdm
